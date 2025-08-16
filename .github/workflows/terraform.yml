@@ -41,6 +41,12 @@ jobs:
         run: terraform validate
         working-directory: ./terraform
 
+      - name: Terraform Plan
+        run: terraform plan -out=tfplan
+        working-directory: ./terraform
+        continue-on-error: true
+
+        
       - name: Terraform Apply
         run: terraform apply -auto-approve
         working-directory: ./terraform
