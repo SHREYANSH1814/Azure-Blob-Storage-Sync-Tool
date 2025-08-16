@@ -6,12 +6,7 @@ on:
       - main
     paths:
       - 'terraform/**'
-  workflow_dispatch:
-    inputs:
-      reason:
-        description: 'Reason for manual trigger'
-        required: false
-        default: 'Testing'
+  
 
 jobs:
   terraform:
