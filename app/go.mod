@@ -1,4 +1,4 @@
-module stackguard
+module github.com/SHREYANSH1814/stackguard-assignment/app
 
 go 1.23.1
 
